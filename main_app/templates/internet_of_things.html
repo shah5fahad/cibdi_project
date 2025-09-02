@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %}Mining Impacts Research | Curevita Research{% endblock %}
+
+{% block content %}
+<br><br><br><br><br>
+<style>
+    .hero-background {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/assets/img/mining_activities.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        padding: 100px 0;
+        margin-bottom: 50px;
+    }
+    
+    .paper-card {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: -80px;
+        background: white;
+    }
+    
+    .card-header {
+        padding: 25px;
+    }
+    
+    .card-body {
+        padding: 30px;
+    }
+    
+    .btn-download {
+        background-color:rgb(40, 56, 70);
+        border: none;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    
+    .btn-download:hover {
+        background-color:rgb(40, 56, 70);
+        transform: translateY(-2px);
+    }
+</style>
+<style>
+    .btn-download, .btn-download:hover {
+        color: white !important;
+    }
+</style>
+<div class="hero-background text-center">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold text-white">Internet of Things</h1>
+        <p class="lead">IoT connects physical devices for seamless communication</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="paper-card">
+                <div class="card-header" style="background-color: #f0f7ff; color: #003366; border-bottom: 1px solid #d0e3ff;">
+                    <h3 class="text-center mb-0">Paper explores IoT’s architecture, applications, challenges, and future potential</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5 class="text-muted"></i>Author</h5>
+                            <p>Priyadarshini Bharthare</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-muted"></i>Published in</h5>
+                            <p>Curevita Innovation of BioData Intelligence (CIBDI), Vol 1, Issue 1, 2025</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <h4 class="mb-4"><i class="mr-2 text-primary"></i>Abstract</h4>
+                    <div class="abstract-content">
+                        <p>
+                            The Internet of Things (IoT) represents a technological revolution that enables physical devices to communicate and interact over the internet.
+                        </p>
+                        <p>
+                             This paper explores the architecture, applications, advantages, challenges, and future potential of IoT. 
+                        </p>
+                        <p>
+                            With the increasing integration of Artificial Intelligence (AI), 5G, and edge computing, IoT is transforming industries, cities, and human life.
+                        </p>
+                        <p>
+                            The research also highlights security issues and the need for global standards for successful IoT adoption.
+                        </p>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <div class="text-center mt-5">
+                        <a href="/static/assets/pdf/Paper_No_CRIN004.pdf" class="btn btn-primary btn-lg text-white" download>
+                            <i class="fas fa-download mr-2"></i> Download (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer text-muted text-center">
+                    <small>
+                        Citation: Bharthare  Priyadarshini. 2025. The Internet of Things (IoT): Opportunities, Challenges, and Future Scope.Curevita Innovation of BioData Intelligence 1,1,17-21.
+                    <br>
+                    </small>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+</div>
+{% endblock %}

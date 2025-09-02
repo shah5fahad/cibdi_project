@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>CIBDI - Curevita Innovation of BioData Intelligence</title>
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+
+      <!-- Favicons -->
+      <link
+         href="{{ url_for('static', filename='assets/img/image-3.png') }}"
+         rel="icon"
+      />
+      <link
+         href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}"
+         rel="apple-touch-icon"
+      />
+
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com" rel="preconnect" />
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+         rel="stylesheet"
+      />
+      <link 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        rel="stylesheet"
+      >
+
+      <!-- Vendor CSS Files -->
+      <link
+         href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}"
+         rel="stylesheet"
+      />
+      <link
+         href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}"
+         rel="stylesheet"
+      />
+      <link
+         href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}"
+         rel="stylesheet"
+      />
+      <link
+         href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}"
+         rel="stylesheet"
+      />
+      <link
+         href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}"
+         rel="stylesheet"
+      />
+
+      <!-- Main CSS File -->
+      <link
+         href="{{ url_for('static', filename='assets/css/main.css') }}"
+         rel="stylesheet"
+      />
+
+   </head>
+
+   <body class="index-page">
+      <header id="header" class="header fixed-top">
+         <div class="topbar d-flex align-items-center">
+            <div
+               class="container d-flex justify-content-center justify-content-md-between"
+            >
+               <div class="contact-info d-flex align-items-center">
+                  <i class="bi bi-envelope d-flex align-items-center"
+                     ><a href="mailto:contact@example.com"
+                        >infocvrb@curevita.org</a
+                     ></i
+                  >
+                  <i class="bi bi-phone d-flex align-items-center ms-4"
+                     ><span>+91-7987-082-627</span></i
+                  >
+               </div>
+               <div class="social-links d-none d-md-flex align-items-center">
+                  <a href="https://x.com/curevitares?t=y7v5NGuSNIHXwTPs5jLNUw&amp;s=08" class="twitter"
+                     ><i class="bi bi-twitter-x"></i
+                  ></a>
+                  <a href="https://www.facebook.com/Curevitaresearch?rdid=UzKVvwaxNBCMndkM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15L8uPdxqR%2F#" class="facebook"
+                     ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com/curevitaresearch/?igsh=MW1qOWMyaG1mdnRkOQ%3D%3D#" class="instagram"
+                     ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="https://www.linkedin.com/company/curevita-research-pvt-ltd/" class="linkedin"
+                     ><i class="bi bi-linkedin"></i
+                  ></a>
+                  <a href="http://www.youtube.com/@curevitaresearch" class="linkedin"
+                     ><i class="bi bi-youtube"></i
+                  ></a>
+               </div>
+            </div>
+         </div>
+         <div class="branding d-flex align-items-center">
+            <div
+               class="container position-relative d-flex align-items-center justify-content-between"
+            >
+               <a href="/" class="logo d-flex align-items-center">
+                  <!-- Uncomment the line below if you also wish to use an image logo -->
+                  <img
+                     src="{{ url_for('static', filename='assets/img/file-3i0SDQN6Ojb5x94AKMPiXW63.webp') }}"
+                     alt=""
+                  />
+
+                  <div class="sitename text-light fs-5">
+                     Curevita
+                     <hr
+                        style="margin: 0 !important; opacity: 0.5 !important"
+                     />
+                     Research
+                  </div>
+                  <span></span>
+               </a>
+
+               <nav id="navmenu" class="navmenu">
+                  <ul>
+                     <li><a href="/current_issue">Current Issues</a></li>
+                     <li class="dropdown">
+                        <div class="dropdown-content">Author Guidelines ▾</div>
+                        <ul class="dropdown-contents">
+                           <div class="text-danger text-center">Download</div><hr>
+                           <li><a href="/static/assets/pdf/CRIN_Copyright_Transfer_Form.docx" download>Copyright Transfer Form</a></li>
+                           <li><a href="/static/assets/pdf/CRIN Paper template.docx" download>Paper Template</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="/#services">Services</a></li>
+                     <li><a href="/about">About</a></li>
+                     <li><a href="/Payment">Payment</a></li>
+                     <li><a href="/#contact">Contact</a></li>
+                  </ul>
+                  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+               </nav>
+            </div>
+         </div>
+         <div class="topbar d-flex align-items-center">
+            <div class="scrolling-heading-wrapper">
+              <div class="scrolling-heading-text">
+                Call for Papers: Submit your original research to our quarterly journal and contribute to global academic discourse. Cycles: May-june-July / Aug-sep-Oct / Nov-Dec-Jan / Feb-March-Apr
+              </div>
+            </div>
+          </div>
+      </header>
+      <!-- Page content -->
+      <div>
+         <br><br>
+         {% block content %}{% endblock %}
+      </div>
+      <footer id="footer" class="footer accent-background">
+         <div class="container footer-top">
+            <div class="row gy-4">
+               <div class="col-lg-5 col-md-12 footer-about">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                     <span class="sitename">CIBDI</span>
+                  </a>
+                  <p>
+                     <strong
+                        >Curevita Innovation of BioData Intelligence (CIBDI)</strong
+                     >
+                     is a global platform for multidisciplinary research
+                     publication. We strive to promote high-quality research
+                     through our streamlined peer-reviewed process and
+                     transparent publishing system.
+                  </p>
+                  <div class="social-links d-flex mt-4">
+                     <a href="https://x.com/curevitares?t=y7v5NGuSNIHXwTPs5jLNUw&amp;s=08"><i class="bi bi-twitter-x"></i></a>
+                     <a href="https://www.facebook.com/Curevitaresearch?rdid=UzKVvwaxNBCMndkM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15L8uPdxqR%2F#"><i class="bi bi-facebook"></i></a>
+                     <a href="https://www.instagram.com/curevitaresearch/?igsh=MW1qOWMyaG1mdnRkOQ%3D%3D#"><i class="bi bi-instagram"></i></a>
+                     <a href="https://www.linkedin.com/company/curevita-research-pvt-ltd/"><i class="bi bi-linkedin"></i></a>
+                     <a href="http://www.youtube.com/@curevitaresearch"><i class="bi bi-youtube"></i></a>
+                  </div>
+               </div>
+
+               <div class="col-lg-2 col-6 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                     <li><a href="/">Home</a></li>
+                     <li><a href="/about">About Us</a></li>
+                     <li><a href="/#publication-guidelines">Scope Of Journal</a></li>
+                     <li><a href="/#submission-guidelines">Submission Process</a></li>
+                     <li><a href="/#faq">FAQ</a></li>
+                  </ul>
+               </div>
+
+               <div class="col-lg-2 col-6 footer-links">
+                  <h4>Quick Services</h4>
+                  <ul>
+                     <li><a href="/#team">Reviewer Panel</a></li>
+                     <li><a href="/#blogs">Recent Blogs</a></li>
+                     <li><a href="/#contact">Contact Support</a></li>
+                     <li><a href="/#testimonials">Editorial Board</a></li>
+                  </ul>
+               </div>
+
+               <div
+                  class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+               >
+                  <h4>Contact Us</h4>
+                  <p>4/21 LIG, Informal Sector, Vidya Nagar, Bhopal, MP, India</p>
+                  <p class="mt-4">
+                      <a href="tel:+917987082627"><i class="fa-solid fa-phone me-2"></i> +91 79870 82627</a>
+                  </p>
+                  <p>
+                    <a href="mailto:infocvrb@curevita.org"><i class="fa fa-envelope me-2"></i>infocvrb@curevita.org</a>
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="container copyright text-center mt-4">
+            <p>
+               © Copyright <strong class="px-1 sitename">Curevita Research Pvt Ltd</strong> | All
+               Rights Reserved
+            </p>
+            <div class="credits">
+               Designed & Maintained by Curevita Research Web Team
+            </div>
+         </div>
+      </footer>
+      <!-- Scroll Top -->
+      <a
+         href="#"
+         id="scroll-top"
+         class="scroll-top d-flex align-items-center justify-content-center"
+         ><i class="bi bi-arrow-up-short"></i
+      ></a>
+      <!-- Preloader -->
+      <div id="preloader"></div>
+      <!-- Vendor JS Files -->
+      <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+      <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+      <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+      <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+   </body>
+</html>

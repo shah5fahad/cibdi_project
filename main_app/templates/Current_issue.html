@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+
+{% block title %}Current Research Issues - Curevita Research International Nexus{% endblock %}
+
+{% block content %}
+<br><br><br><br>
+<style>
+    .research-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .page-title {
+        color: #2c3e50;
+        margin-bottom: 40px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #3498db;
+        text-align: center;
+        font-weight: 600;
+    }
+    .research-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        border-left: 4px solid #3498db;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .research-card-link {
+        text-decoration: none;
+        color: inherit;
+    }
+    .research-card-link:hover .research-card {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        border-left: 4px solid #2980b9;
+    }
+    .research-card-link:active .research-card {
+        transform: translateY(-2px);
+    }
+    .research-title {
+        color: #2c3e50;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .research-description {
+        color: #555;
+        margin-bottom: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+    .read-more-btn {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 4px;
+        font-weight: 500;
+        transition: background-color 0.3s;
+        align-self: flex-start;
+    }
+    .research-card-link:hover .read-more-btn {
+        background-color: #2980b9;
+    }
+    .research-meta {
+        font-size: 0.9rem;
+        color: #7f8c8d;
+        margin-top: 15px;
+    }
+    @media (max-width: 768px) {
+        .research-card {
+            padding: 20px;
+        }
+        .research-title {
+            font-size: 1.1rem;
+        }
+    }
+</style>
+
+<div class="research-container">
+    <div class="container section-title" data-aos="fade-up">
+        <h1 lass="fw-bold ">Current Publication Issues</h1>
+    </div>
+    <div class="row">
+        <!-- Research Item 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <a href="/ai_anemia" class="research-card-link">
+                <div class="research-card">
+                    <h3 class="research-title">A Comprehensive Review on Using Artificial Intelligence and Deep Learning to Predict Anemia in Humans</h3>
+                    <p class="research-description">
+                        Anemia, a global health concern affecting over 2 billion people, is traditionally diagnosed through invasive and resource-intensive blood tests. This review synthesizes research on how AI and Deep Learning are transforming diagnostics by developing non-invasive, accessible, and scalable alternatives that analyze subtle physiological changes.
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="research-meta">
+                        <span>Published: 20 July 2025</span> | 
+                        <span>Category: Health & Biomedical Sciences</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Research Item 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <a href="/data_science_emerging_field" class="research-card-link">
+                <div class="research-card">
+                    <h3 class="research-title">Data Science: An Emerging Interdisciplinary Field</h3>
+                    <p class="research-description">
+                        Data Science is an interdisciplinary domain that combines statistical analysis, computer science, and domain expertise to extract meaningful insights from structured and unstructured data. The rapid expansion of big data and artificial intelligence has positioned Data Science as a crucial field for innovation, research, and business decision-making.
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="research-meta">
+                        <span>Published: 20 July 2025</span> | 
+                        <span>Category: Data Science</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Research Item 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <a href="/machine_learning_study" class="research-card-link">
+                <div class="research-card">
+                    <h3 class="research-title">Machine Learning: Concepts, Applications & Future Directions</h3>
+                    <p class="research-description">
+                        Machine Learning (ML) has emerged as a transformative technology at the intersection of computer science, statistics, and artificial intelligence. It enables systems to learn patterns from data and improve performance without being explicitly programmed. This research paper provides an in-depth study of machine learning concepts, types, applications across industries, challenges, and future scope.
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="research-meta">
+                        <span>Published: 20 July 2025</span> | 
+                        <span>Category: Computer Science</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Research Item 4 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <a href="/internet_of_things" class="research-card-link">
+                <div class="research-card">
+                    <h3 class="research-title">The Internet of Things (IoT): Opportunities, Challenges, and Future Scope</h3>
+                    <p class="research-description">
+                        The Internet of Things (IoT) represents a technological revolution that enables physical devices to communicate and interact over the internet. This paper explores the architecture, applications, advantages, challenges, and future potential of IoT. With the increasing integration of Artificial Intelligence (AI), 5G, and edge computing, IoT is transforming industries, cities, and human life. The research also highlights security issues and the need for global standards for successful IoT adoption.
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="research-meta">
+                        <span>Published: 20 July 2025 </span> | 
+                        <span>Category: Technology & Innovation</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Research Item 5 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <a href="/big_data_challenges" class="research-card-link">
+                <div class="research-card">
+                    <h3 class="research-title">Big Data: Transforming Business Intelligence</h3>
+                    <p class="research-description">
+                        Exploring Big Data's challenges, technologies, and future directions in revolutionizing decision-making across industries through AI, ML, and cloud computing.
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="research-meta">
+                        <span>Published: 20 July 2025</span> | 
+                        <span>Category: Data Science & Technology</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block title %}Water Quality Assessment - Narmada River | Curevita Research{% endblock %}
+
+{% block content %}
+<br><br><br><br><br>
+<style>
+    .hero-background {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/assets/img/narmada_revier.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        padding: 100px 0;
+        margin-bottom: 50px;
+    }
+    
+    .paper-card {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: -80px;
+        background: white;
+    }
+    
+    .card-header {
+        padding: 25px;
+    }
+    
+    .card-body {
+        padding: 30px;
+    }
+    
+    .btn-download {
+        background-color:rgb(40, 56, 70);
+        border: none;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    
+    .btn-download:hover {
+        background-color:rgb(40, 56, 70);
+        transform: translateY(-2px);
+    }
+</style>
+<style>
+    .btn-download, .btn-download:hover {
+        color: white !important;
+    }
+</style>
+<div class="hero-background text-center">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold text-white">AI and Deep Learning for Anemia Prediction</h1>
+        <p class="lead">AI and deep learning are revolutionizing anemia diagnosis with non-invasive, accessible, and scalable methods.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="paper-card">
+                <div class="card-header" style="background-color: #f0f7ff; color: #003366; border-bottom: 1px solid #d0e3ff;">
+                    <h3 class="text-center mb-0">Research on using AI and DL to replace invasive blood tests with smartphone-based analysis of physiological data for early anemia detection</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5 class="text-muted"></i>Authors</h5>
+                            <p>Shreya Sharma</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-muted"></i>Published in</h5>
+                            <p>Curevita Innovation of BioData Intelligence (CIBDI), Vol 1, Issue 1, 2025</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <h4 class="mb-4"><i class="mr-2 text-primary"></i>Abstract</h4>
+                    <div class="abstract-content">
+                        <p>
+                            Anemia, a global health concern affecting over 2 billion people, is traditionally diagnosed through invasive and resource-intensive blood tests.
+                        </p>
+                        <p>
+                             These methods can be a hassle, expensive, and sometimes impossible to access, especially in low resource settings.
+                        </p>
+                        <p>
+                             This review paper synthesizes key research on how Artificial Intelligence (AI) and Deep Learning (DL) are transforming diagnostics by developing non-invasive, accessible, and scalable alternatives.
+                        </p>
+                        <p>
+                            Instead of drawing blood, AI models are being trained to analyze subtle physiological changes.
+                        </p>
+                        <p>
+                            The research in this domain primarily focuses on leveraging visual and physiological data that can be captured easily, often with a smartphone.
+                        </p>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <div class="text-center mt-5">
+                        <a href="/static/assets/pdf/CIBDI_Paper_ID_01.pdf" class="btn btn-primary btn-lg text-white" download>
+                            <i class="fas fa-download mr-2"></i> Download (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer text-muted text-center">
+                    <small>
+                        Citation: Sharma Shreya. .2025.A Comprehensive Review on Using Artificial Intelligence and Deep Learning to Predict Anemia in Humans.Curevita Innovation of BioData Intelligence 1,1,1-8.<br>
+                    </small>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+</div>
+{% endblock %}
